@@ -1,2 +1,3 @@
-# hf_scripts
-Hack Forum Scripts
+# Hack Forums User Scripts
+
+Custom scripts to ease work
