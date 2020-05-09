@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hack Forums Profile Citation Button
 // @namespace    Working Profile Citation
-// @version      1.0
+// @version      1.1
 // @description  Button apprears next to the adv card. Wait for the page to load and the button will show up too.
 // @author       eXceptional - 1160828
 // @match        *hackforums.net/member.php?action=profile&uid=*
