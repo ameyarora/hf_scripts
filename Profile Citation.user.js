@@ -9,7 +9,7 @@
 // @grant        GM_setClipboard
 // @updateURL    https://github.com/ameyarora/hf_scripts/raw/master/Profile%20Citation.user.js
 // @downloadURL  https://github.com/ameyarora/hf_scripts/raw/master/Profile%20Citation.user.js
-// @iconURL      https://raw.githubusercontent.com/ameyarora/master/icon.png
+// @iconURL      https://raw.githubusercontent.com/ameyarora/hf_scripts/master/icon.png
 // ==/UserScript==
 
 
