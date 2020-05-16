@@ -2,7 +2,7 @@
 // @name         Hack Forums ToolBar
 // @author       ameyarora
 // @contributor  xadamxk
-// @namespace    https://github.com/ameyarora/HF-Scripts
+// @namespace    https://github.com/ameyarora/hf_scripts
 // @version      1.3.0
 // @description  Adds a toolbar with various options to the top of Hack Forums.
 // @require      https://code.jquery.com/jquery-3.1.1.js
