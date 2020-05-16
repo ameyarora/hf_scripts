@@ -394,12 +394,12 @@ function createStickyHeader(){
     }
     // Create toolbar
     $("#panel").append($("<div>").attr("id","Sticky")
-                       .css("height","22px").css("background-color","#333333")
+                       .css("height","32px").css("background-color","#333333")
                        .css("border-style","solid").css("border-color","white").css("border-width","0px 0px 1px 0px")
                        .css("align-items","center").css("z-index","100"));
     // ----------------------------------------- LEFT -----------------------------------------
     $("#Sticky").append($("<div>").attr("id","leftSticky").addClass("float_left").text("")
-                        .css("padding-left","5px").css("display","block").css("height",headerHeight));
+                        .css("padding-left","5px").css("padding-top","5px").css("display","block").css("height",headerHeight));
     if(GM_config.get('showShortcut1')){
         // Home
         $("#leftSticky").append($("<a>").attr("href",GM_config.get('shortcut1Link')).attr("onClick","").attr("title","Home")
@@ -455,7 +455,7 @@ function createStickyHeader(){
     $("#leftSticky").append($("<a>").attr("href","#Settings").attr("onClick","").attr("title","Settings")
                             .append($("<i>").attr("id","settingsleftSticky").addClass("fa fa-cog fa-lg")));
     // Right
-    $("#Sticky").append($("<div>").attr("id","rightSticky").css("float","right").css("height",headerHeight));
+    $("#Sticky").append($("<div>").attr("id","rightSticky").css("padding-left","5px").css("padding-top","5px").css("float","right").css("height",headerHeight));
     // ----------------------------------------- RIGHT -----------------------------------------
     // View New Posts (right)
     if(GM_config.get('showNewPosts'))
