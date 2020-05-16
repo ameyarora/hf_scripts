@@ -455,7 +455,7 @@ function createStickyHeader(){
     $("#leftSticky").append($("<a>").attr("href","#Settings").attr("onClick","").attr("title","Settings")
                             .append($("<i>").attr("id","settingsleftSticky").addClass("fa fa-cog fa-lg")));
     // Right
-    $("#Sticky").append($("<div>").attr("id","rightSticky").css("padding-left","5px").css("padding-top","5px").css("float","right").css("height",headerHeight));
+    $("#Sticky").append($("<div>").attr("id","rightSticky").css("padding-right","5px").css("padding-top","5px").css("float","right").css("height",headerHeight));
     // ----------------------------------------- RIGHT -----------------------------------------
     // View New Posts (right)
     if(GM_config.get('showNewPosts'))
