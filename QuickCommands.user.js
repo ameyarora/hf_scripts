@@ -10,6 +10,7 @@
 // @match           *hackforums.net/showthread.php?tid=*
 // @match           *hackforums.net/private.php?action=send*
 // @match           *hackforums.net/newthread.php?fid=*
+// @match           *hackforums.net/editpost.php?pid=*
 // @updateURL       https://github.com/ameyarora/hf_scripts/raw/master/QuickCommands.user.js
 // @downloadURL     https://github.com/ameyarora/hf_scripts/raw/master/QuickCommands.user.js
 // @version         1.0
