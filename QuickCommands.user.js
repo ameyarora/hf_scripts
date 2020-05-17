@@ -1,7 +1,6 @@
 // ==UserScript==
 // @name            Hack Forums Quick Commands
 // @namespace       ALT+R | ALT+I | ALT+C | ALT+Q
-// @description     Button apprears next to the adv card. Wait for the page to load and the button will show up too.
 // @author          ameyarora
 // @description     Make a quick spoiler tag around your text when making a new thread or post.
 // @require         http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js
@@ -10,6 +9,7 @@
 // @match           *hackforums.net/showthread.php?tid=*
 // @match           *hackforums.net/showthread.php?tid=*
 // @match           *hackforums.net/private.php?action=send*
+// @match           *hackforums.net/newthread.php?fid=*
 // @updateURL       https://github.com/ameyarora/hf_scripts/raw/master/QuickCommands.user.js
 // @downloadURL     https://github.com/ameyarora/hf_scripts/raw/master/QuickCommands.user.js
 // @version         1.0
