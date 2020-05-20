@@ -3,20 +3,22 @@
 // @author       ameyarora
 // @contributor  xadamxk
 // @namespace    https://github.com/ameyarora/hf_scripts
-// @version      1.1
+// @version      1.2
 // @description  Adds live preview when composing posts, threads, and private messages
 // @require      https://code.jquery.com/jquery-3.1.1.js
 // @require      https://raw.githubusercontent.com/ameyarora/ThreadDesignGenerator/master/JS/xbbcode.js
-// @match        *://hackforums.net/showthread.php?tid=*
-// @match        *://hackforums.net/newreply.php?tid=*
-// @match        *://hackforums.net/newthread.php?fid=*
-// @match        *://hackforums.net/editpost.php?pid=*
-// @match        *://hackforums.net/private.php?action=send*
+// @match        *hackforums.net/showthread.php?tid=*
+// @match        *hackforums.net/newreply.php?tid=*
+// @match        *hackforums.net/newthread.php?fid=*
+// @match        *hackforums.net/editpost.php?pid=*
+// @match        *hackforums.net/private.php?action=send*
+// @match        *hackforums.net/private.php?action=read&pmid=*
 // @copyright    2020+
 // @updateURL    https://github.com/ameyarora/hf_scripts//raw/master/LivePreviewer.user.js
 // @downloadURL  https://github.com/ameyarora/hf_scripts//raw/master/LivePreviewer.user.js
 // @iconURL      https://raw.githubusercontent.com/ameyarora/hf_scripts/master/icon.png
 // ------------------------------ Change Log ----------------------------
+// version 1.2: Added ?action=read&pmid= Page
 // version 1.1: CSS/Bug Fixes
 // version 1.0: Release
 // ==/UserScript==
@@ -24,11 +26,12 @@
 $("head").append('<link '+ "href='https:\/\/raw.githubusercontent.com\/ameyarora\/hf_scripts\/master\/Lib\/tinybox.css'" + 'rel="stylesheet" type="text/css">');
 
 // Quick Reply
-if ( window.location.href.includes("hackforums.net/showthread.php?tid=")){
+if ( window.location.href.includes("hackforums.net/showthread.php?tid=")||
+   window.location.href.includes("hackforums.net/private.php?action=read&pmid=")){
     // Check for quick reply box
     if($("strong:contains(Quick Reply)")){
         $("#quickreply_e tr:eq(1)").after($("<tr>")
-                                          .append($("<td>").attr("colspan","2").addClass("trow1")
+                                          .append($("<td>").attr("colspan","2").addClass("thead trow1")
                                                   .append($("<div>").addClass("expcolimage")
                                                           .append("<img id='livePreviewCollapse' alt='[-]' title='[-]' style='cursor: pointer;' src='https://hackforums.net/images/mobale/collapse.png' />"))
                                                   .append($("<div>")
@@ -36,7 +39,7 @@ if ( window.location.href.includes("hackforums.net/showthread.php?tid=")){
         $("#quickreply_e tr:eq(2)").after($("<tr>")
                                           .append($("<td>").attr("colspan","2").css("background-color","#333333")
                                                   //.append("<hr>")
-                                                  .append($("<div>").attr("id","livePreview"))));
+                                                  .append($("<div>").attr("id","livePreview").attr("style","margin-left: 10px"))));
         // Event Listeners
         $("#message").on("input click", function () {
             updatePreview($("#message").val(), false, "#livePreview");
