@@ -6,7 +6,7 @@
 // @version      1.0
 // @description  Adds live preview when composing posts, threads, and private messages
 // @require      https://code.jquery.com/jquery-3.1.1.js
-// @require      https://raw.githubusercontent.com/ameyarora/hf_scripts/master/Lib/xbbcode.js
+// @require      https://raw.githubusercontent.com/ameyarora/ThreadDesignGenerator/master/JS/xbbcode.js
 // @match        *://hackforums.net/showthread.php?tid=*
 // @match        *://hackforums.net/newreply.php?tid=*
 // @match        *://hackforums.net/newthread.php?fid=*
