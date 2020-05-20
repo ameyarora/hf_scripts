@@ -3,7 +3,7 @@
 // @author       ameyarora
 // @contributor  xadamxk
 // @namespace    https://github.com/ameyarora/hf_scripts
-// @version      1.0
+// @version      1.1
 // @description  Adds live preview when composing posts, threads, and private messages
 // @require      https://code.jquery.com/jquery-3.1.1.js
 // @require      https://raw.githubusercontent.com/ameyarora/ThreadDesignGenerator/master/JS/xbbcode.js
@@ -17,6 +17,7 @@
 // @downloadURL  https://github.com/ameyarora/hf_scripts//raw/master/LivePreviewer.user.js
 // @iconURL      https://raw.githubusercontent.com/ameyarora/hf_scripts/master/icon.png
 // ------------------------------ Change Log ----------------------------
+// version 1.1: CSS/Bug Fixes
 // version 1.0: Release
 // ==/UserScript==
 // ------------------------------ On Page ------------------------------
