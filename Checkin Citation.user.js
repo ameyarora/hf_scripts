@@ -29,7 +29,7 @@ if ( window.location.href.includes("hackforums.net/member.php?action=profile&uid
 }
 //Private Message
 else if (window.location.href.includes("hackforums.net/private.php?action=read&pmid=")) {
-    $(".largetext").eq(0).find("a").before('<button id="citeLink" class="button" style="margin-left: 5px;">Checkin Cite</button>');
+    $(".largetext").eq(0).find("a").before('<button id="citeLink" class="button" style="margin-left: 5px;">Checkin Cite</button><br>');
 }
 
 citeLink = document.getElementById("citeLink");
