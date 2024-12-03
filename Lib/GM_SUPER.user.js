@@ -6,7 +6,7 @@
 *****   handle any javascript variable type.
 *****
 *****   Add it to your GM script with:
-*****       // @require https://github.com/ameyarora/hf_scripts/raw/master/GM_SUPER.user.js
+*****       // @require https://github.com/ameyarora/hf_scripts/raw/refs/heads/master/Lib/GM_SUPER.user.js
 *****
 *****
 *****   Usage:
